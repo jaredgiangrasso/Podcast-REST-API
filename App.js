@@ -103,7 +103,7 @@ app.put('/api/podcasts/:_id', (req, res) => {
 	});
 })
 
-//Delete Genres
+//Delete Podcast
 app.delete('/api/podcasts/:_id', (req, res) => {
 	Podcast.deletePodcast(req.params._id, function(err, podcasts){
 		if(err){
@@ -113,4 +113,6 @@ app.delete('/api/podcasts/:_id', (req, res) => {
 	});
 })
 
-app.listen(3000, () => console.log('Running on port 3000...'));
+const port = 5000;
+
+app.listen(port, () => console.log('Running on port 5000...'));

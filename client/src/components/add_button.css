@@ -1,0 +1,35 @@
+.addButton {
+	font-family: Arial;
+	position: absolute;
+	top: -80px;
+	left: 6%;
+	font-size: 20px;
+	background: rgba(229,229,235,1);
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	filter: drop-shadow(2px 2px 2px rgb(0, 0, 0, .25));
+	width: 180px;
+	height: 50px;
+	text-align: right;
+	cursor: pointer;
+}
+
+#addIconWrapper {
+	width: 45px;
+	height: 100%;
+	z-index: 1;
+	background: red;
+	position: absolute;
+	top: 0;
+	left: 3px;
+	background: linear-gradient(90deg, rgba(230,230,230,0) 0%, rgba(220,222,230,1) 100%);
+}
+
+#addIcon {
+	position: absolute;
+	top: 16px;
+	width: 20px;
+	left: 15px;
+	z-index: 2;
+}

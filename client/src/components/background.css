@@ -1,0 +1,18 @@
+#background {
+	width: 120%;
+	height: 150px;
+	background: lightgray;
+	position: absolute;
+	top: 43.5%;
+	z-index: -1;
+	background: linear-gradient(90deg, rgba(205,207,215,1) 0%, rgba(225,220,255,1) 100%);
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,.35));
+}
+
+#pattern {
+	height: 5px;
+	background-color: rgba(235,230,245,1);
+	width: 100%;
+	position: absolute;
+	top: 10px;
+}

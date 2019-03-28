@@ -50,7 +50,7 @@ class AddForm extends Component {
       	{this.props.addButtonClicked 
           ? 
           <div id='addFormWrapper'>
-            <form onSubmit={this.handleSubmit} id='addForm'>
+            <form onSubmit={this.handleSubmit} id='addForm' autocomplete='off'>
               <label htmlFor='title'>
                 Title:
               </label>

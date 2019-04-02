@@ -5,9 +5,10 @@
 }
 
 label {
-	
+	display: inline;
 }
 
 input {
-	width: 10%;
+	width: 7%;
+	margin-left: 5px;
 }

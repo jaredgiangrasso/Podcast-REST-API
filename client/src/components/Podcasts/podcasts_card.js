@@ -11,10 +11,13 @@ class PodcastCard extends Component {
 		}
 	}
 
+	//when description is clicked, set cardDescriptionClicked to true 
+	//to display full description
 	changeCardHeight = () => {
 		return this.setState({cardDescriptionClicked: !this.state.cardDescriptionClicked});
 	}
 
+	//delete request to remove podcast by id from database
 	deletePodcast = () => {
 		fetch(`/api/podcasts/${this.props.podcast._id}`, {method: 'DELETE'})
 		.then(res => res.json())
@@ -26,6 +29,7 @@ class PodcastCard extends Component {
 	render() {
 		let podcast = this.props.podcast;
 
+		//change style based on status of this.state.cardDescriptionClicked
 		const styles = {
 			podcastCardStyle: {
 				height: this.state.cardDescriptionClicked ? 500 : 400,

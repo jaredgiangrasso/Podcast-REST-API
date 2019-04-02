@@ -38,5 +38,17 @@ button:focus {
 
 #podcasts {
 	position: relative;
-	top: 25%;
+	top: 10%;
+	height: 100%;
+}
+
+#add-container{
+	margin-bottom: 5%;
+	margin-left: 7%;
+}
+
+.carousel {
+	position: absolute;
+	top: 15%;
+	width: 100%;
 }

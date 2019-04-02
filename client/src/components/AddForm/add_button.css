@@ -1,8 +1,5 @@
 .addButton {
 	font-family: Arial;
-	position: absolute;
-	top: -80px;
-	left: 6%;
 	font-size: 20px;
 	background: rgba(229,229,235,1);
 	border: none;
@@ -13,6 +10,11 @@
 	height: 50px;
 	text-align: right;
 	cursor: pointer;
+}
+
+.add {
+	display: inline-block;
+	position: relative;
 }
 
 #addIconWrapper {

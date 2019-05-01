@@ -48,7 +48,7 @@ class Podcasts extends Component {
 		this.setState({addButtonClicked: !this.state.addButtonClicked});
 	}
 
-	//add podcast to state to refreshc component
+	//add podcast to state to refresh component
 	addPodcastToState = (podcast) => {
 		this.setState({addButtonClicked: !this.state.addButtonClicked});
 		this.fetchPodcasts();

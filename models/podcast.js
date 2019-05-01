@@ -18,9 +18,6 @@ var podcastSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	station: {
-		type: String
-	},
 	listen_url: {
 		type: String
 	}

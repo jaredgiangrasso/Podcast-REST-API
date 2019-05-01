@@ -8,14 +8,11 @@ app.use(bodyParser.json());
 Genre = require('./models/genre.js');
 Podcast = require('./models/podcast.js');	
 
-mongoose.connect('mongodb://localhost/podcasts', { useMongoClient: true });
+mongoose.connect('mongodb://localhost/podcasts');
 var db = mongoose.connection;
 
-//ROUTES
-//GET Home
-app.get('/', (req, res) => {
-	res.send('Please use /api/podcasts or /api/genres');
-})
+
+//ROUTES//
 
 //GET Genres
 app.get('/api/genres', (req, res) => {

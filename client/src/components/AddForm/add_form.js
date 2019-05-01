@@ -17,6 +17,7 @@ class AddForm extends Component {
 
   //update state on form change
   handleChange = (event) => {
+    console.log(event.target);
     const target = event.target;
     const name = target.name;
     this.setState({
@@ -55,13 +56,15 @@ class AddForm extends Component {
     return (
       <div className="addForm">
       	{this.props.addButtonClicked 
+          //if add button has been clicked, display form
+          //otherwise, display nothing 
           ? 
           <div id='addFormWrapper'>
-            <form onSubmit={this.handleSubmit} id='form' autocomplete='on'>
+            <form onSubmit={this.handleSubmit} id='form' autoComplete='on'>
               <Input value={this.state.title} handleChange={this.handleChange} type="text" name="title" />
               <Input value={this.state.genre} handleChange={this.handleChange} type="text" name="genre" />
-              <Input id='description' value={this.state.description} onChange={this.handleChange} type="text" name="description" />
-              <Input value={this.state.img_url} onChange={this.handleChange} type="text" name="img_url" />
+              <Input id='description' value={this.state.description} handleChange={this.handleChange} type="text" name="description" />
+              <Input value={this.state.img_url} handleChange={this.handleChange} type="text" name="img_url" />
               <Input type="submit" value="Submit" />
             </form>
           </div>

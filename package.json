@@ -4,7 +4,7 @@
   "description": "",
   "main": "App.js",
   "scripts": {
-    "start": "node App.js",
+    "dev": "concurrently \"nodemon App.js\" \"mongod\" \"cd client && npm start\" ",
     "server": "nodemon App.js"
   },
   "author": "Jared Giangrasso",
@@ -15,6 +15,7 @@
     "mongoose": "^5.4.19"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "faker": "^4.1.0"
   }
 }

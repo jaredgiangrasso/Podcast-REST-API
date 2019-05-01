@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import add from '../../images/add.svg';
 import './add_button.css';
 
